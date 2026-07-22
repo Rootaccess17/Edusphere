@@ -7,7 +7,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://your-project-name.vercel.app",
+    origin: [
+      "http://localhost:5173",
+      "https://edusphere-tau-eight.vercel.app",
+    ],
     credentials: true,
   })
 );
